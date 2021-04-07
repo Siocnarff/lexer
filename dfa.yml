@@ -26,80 +26,80 @@ states:
         - [['='],48]
         - [['<','>'],58]
   - 2:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['r'],3]
         - ['alpha_ex',42]
   - 3:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['o'],4]
         - ['alpha_ex',42]
   - 4:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['c'],5]
         - ['alpha_ex',42]
   - 5:
-      label: 'Procedure Definition'
+      label: 'ProcedureDefinition'
       transitions:
         - ['alpha_ex',42]
   - 6:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['u'],7]
         - ['alpha_ex',42]
   - 7:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['l'],8]
         - ['alpha_ex',42]
   - 8:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['t'],9]
         - ['alpha_ex',42]
   - 9:
-      label: 'Number Operation'
+      label: 'NumberOperation'
       transitions:
         - ['alpha',42]
   - 10:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['u'],11]
         - ['alpha_ex',42]
   - 11:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['b'],9]
         - ['alpha_ex',42]
   - 12:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['d'],13]
         - [['n'],14]
         - ['alpha_ex',42]
   - 13:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['d'],9]
         - ['alpha_ex',42]
   - 14:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['d'],15]
         - ['alpha_ex',42]
   - 15:
-      label: 'Boolean Operation'
+      label: 'BooleanOperation'
       transitions:
         - ['alpha',42]
   - 16:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['o'],17]
         - ['alpha_ex',42]
   - 17:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['t'],15]
         - ['alpha_ex',42]
@@ -108,43 +108,43 @@ states:
       transitions:
         - ['alpha',42]
   - 19:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['r'],15]
         - [['u'],20]
         - ['alpha_ex',42]
   - 20:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['t'],21]
         - ['alpha_ex',42]
   - 21:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['p'],22]
         - ['alpha_ex',42]
   - 22:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['u'],23]
         - ['alpha_ex',42]
   - 23:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['t'],18]
         - ['alpha_ex',42]
   - 24:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['n'],21]
         - [['f'],25]
         - ['alpha_ex',42]
   - 25:
-      label: 'Control Structure'
+      label: 'ControlStructure'
       transitions:
         - ['alpha',42]
   - 26:
-      label: 'Comparison Symbol'
+      label: 'ComparisonSymbol'
       transitions:
         - ['alpha',42]
   - 27:
@@ -152,78 +152,78 @@ states:
       transitions:
         - ['alpha',42]
   - 28:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['q'],26]
         - [['l'],29]
         - ['alpha_ex',42]
   - 29:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['s'],30]
         - ['alpha_ex',42]
   - 30:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['e'],25]
         - ['alpha_ex',42]
   - 31:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['n'],25]
         - ['alpha_ex',42]
   - 32:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['r'],25]
         - ['alpha_ex',42]
   - 33:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['h'],34]
         - ['alpha_ex',42]
   - 34:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['i'],35]
         - ['alpha_ex',42]
   - 35:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['l'],30]
         - ['alpha_ex',42]
   - 36:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['e'],31]
         - ['alpha_ex',42]
   - 37:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['t'],27]
         - ['alpha_ex',42]
   - 38:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['h'],36]
         - ['alpha_ex',42]
   - 39:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['l'],37]
         - ['alpha_ex',42]
   - 40:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['o'],32]
         - ['alpha_ex',42]
   - 41:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - [['a'],39]
         - ['alpha_ex',42]
   - 42:
-      label: 'User Defined Name'
+      label: 'UserDefinedName'
       transitions:
         - ['alpha',42]
         - ['dnull',42]
@@ -238,6 +238,7 @@ states:
       label: ''
       transitions:
         - ['dpos',44]
+      error: "The - sign must be accompanied by a non-zero integer."
   - 46:
       label: ''
       transitions:
@@ -246,10 +247,10 @@ states:
         - ['alpha',50]
         - [['"'],49]
   - 47:
-      label: 'Grouping Symbol'
+      label: 'GroupingSymbol'
       transitions:
   - 48:
-      label: 'Assignment Operator'
+      label: 'AssignmentOperator'
       transitions:
   - 49:
       label: 'String'
@@ -261,6 +262,7 @@ states:
         - ['dnull',51]
         - ['alpha',51]
         - [['"'],49]
+      error: 'String must have a closing " characer.'
   - 51:
       label: ''
       transitions:
@@ -268,6 +270,7 @@ states:
         - ['dnull',52]
         - ['alpha',52]
         - [['"'],49]
+      error: 'String must have a closing " characer.'
   - 52:
       label: ''
       transitions:
@@ -275,6 +278,7 @@ states:
         - ['dnull',53]
         - ['alpha',53]
         - [['"'],49]
+      error: 'String must have a closing " characer.'
   - 53:
       label: ''
       transitions:
@@ -282,6 +286,7 @@ states:
         - ['dnull',54]
         - ['alpha',54]
         - [['"'],49]
+      error: 'String must have a closing " characer.'
   - 54:
       label: ''
       transitions:
@@ -289,6 +294,7 @@ states:
         - ['dnull',55]
         - ['alpha',55]
         - [['"'],49]
+      error: 'String must have a closing " characer.'
   - 55:
       label: ''
       transitions:
@@ -296,6 +302,7 @@ states:
         - ['dnull',56]
         - ['alpha',56]
         - [['"'],49]
+      error: 'String must have a closing " characer.'
   - 56:
       label: ''
       transitions:
@@ -303,11 +310,12 @@ states:
         - ['dnull',57]
         - ['alpha',57]
         - [['"'],49]
+      error: 'String must have a closing " characer.'
   - 57:
       label: ''
       transitions:
         - [['"'],49]
-      error: 'String may not be more than 8 characters in length'
+      error: 'String may not be more than 8 characters in length.'
   - 58:
-      label: 'Comparison Symbol'
+      label: 'ComparisonSymbol'
       transitions:
