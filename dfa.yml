@@ -1,0 +1,310 @@
+alpha: ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+dpos: ['1','2','3','4','5','6','7','8','9']
+dnull: ['0',1','2','3','4','5','6','7','8','9']
+states:
+  - 1:
+      label: ''
+      transitions:
+        - [['p'],2]
+        - [['m'],6]
+        - [['s'],10]
+        - [['a'],12]
+        - [['n'],16]
+        - [['o'],19]
+        - [['i'],24]
+        - [['e'],28]
+        - [['w'],33]
+        - [['t'],38]
+        - [['f'],40]
+        - [['h'],41]
+        - [['b','c','d','g','j','k','l','q','r','u','v','x','y','z'],42]
+        - [['0'],43]
+        - ['dpos',44]
+        - [['-'],45]
+        - [['"'],46]
+        - [['{','}','(',')',',',';'],47]
+        - [['='],48]
+        - [['<','>'],49]
+  - 2:
+      label: 'User Defined Name'
+      transitions:
+        - [['r'],3]
+        - ['alpha_ex',42]
+  - 3:
+      label: 'User Defined Name'
+      transitions:
+        - [['o'],4]
+        - ['alpha_ex',42]
+  - 4:
+      label: 'User Defined Name'
+      transitions:
+        - [['c'],5]
+        - ['alpha_ex',42]
+  - 5:
+      label: 'Procedure Definition'
+      transitions:
+        - ['alpha_ex',42]
+  - 6:
+      label: 'User Defined Name'
+      transitions:
+        - [['u'],7]
+        - ['alpha_ex',42]
+  - 7:
+      label: 'User Defined Name'
+      transitions:
+        - [['l'],8]
+        - ['alpha_ex',42]
+  - 8:
+      label: 'User Defined Name'
+      transitions:
+        - [['t'],9]
+        - ['alpha_ex',42]
+  - 9:
+      label: 'Number Operation'
+      transitions:
+        - ['alpha',42]
+  - 10:
+      label: 'User Defined Name'
+      transitions:
+        - [['u'],11]
+        - ['alpha_ex',42]
+  - 11:
+      label: 'User Defined Name'
+      transitions:
+        - [['b'],9]
+        - ['alpha_ex',42]
+  - 12:
+      label: 'User Defined Name'
+      transitions:
+        - [['d'],13]
+        - [['n'],14]
+        - ['alpha_ex',42]
+  - 13:
+      label: 'User Defined Name'
+      transitions:
+        - [['d'],9]
+        - ['alpha_ex',42]
+  - 14:
+      label: 'User Defined Name'
+      transitions:
+        - [['d'],15]
+        - ['alpha_ex',42]
+  - 15:
+      label: 'Boolean Operation'
+      transitions:
+        - ['alpha',42]
+  - 16:
+      label: 'User Defined Name'
+      transitions:
+        - [['o'],17]
+        - ['alpha_ex',42]
+  - 17:
+      label: 'User Defined Name'
+      transitions:
+        - [['t'],15]
+        - ['alpha_ex',42]
+  - 18:
+      label: 'I/O'
+      transitions:
+        - ['alpha',42]
+  - 19:
+      label: 'User Defined Name'
+      transitions:
+        - [['r'],15]
+        - [['u'],20]
+        - ['alpha_ex',42]
+  - 20:
+      label: 'User Defined Name'
+      transitions:
+        - [['t'],21]
+        - ['alpha_ex',42]
+  - 21:
+      label: 'User Defined Name'
+      transitions:
+        - [['p'],22]
+        - ['alpha_ex',42]
+  - 22:
+      label: 'User Defined Name'
+      transitions:
+        - [['u'],23]
+        - ['alpha_ex',42]
+  - 23:
+      label: 'User Defined Name'
+      transitions:
+        - [['t'],18]
+        - ['alpha_ex',42]
+  - 24:
+      label: 'User Defined Name'
+      transitions:
+        - [['n'],21]
+        - [['f'],25]
+        - ['alpha_ex',42]
+  - 25:
+      label: 'Control Structure'
+      transitions:
+        - ['alpha',42]
+  - 26:
+      label: 'Comparison Symbol'
+      transitions:
+        - ['alpha',42]
+  - 27:
+      label: 'Halt'
+      transitions:
+        - ['alpha',42]
+  - 28:
+      label: 'User Defined Name'
+      transitions:
+        - [['q'],26]
+        - [['l'],29]
+        - ['alpha_ex',42]
+  - 29:
+      label: 'User Defined Name'
+      transitions:
+        - [['s'],30]
+        - ['alpha_ex',42]
+  - 30:
+      label: 'User Defined Name'
+      transitions:
+        - [['e'],25]
+        - ['alpha_ex',42]
+  - 31:
+      label: 'User Defined Name'
+      transitions:
+        - [['n'],25]
+        - ['alpha_ex',42]
+  - 32:
+      label: 'User Defined Name'
+      transitions:
+        - [['r'],25]
+        - ['alpha_ex',42]
+  - 33:
+      label: 'User Defined Name'
+      transitions:
+        - [['h'],34]
+        - ['alpha_ex',42]
+  - 34:
+      label: 'User Defined Name'
+      transitions:
+        - [['i'],35]
+        - ['alpha_ex',42]
+  - 35:
+      label: 'User Defined Name'
+      transitions:
+        - [['l'],30]
+        - ['alpha_ex',42]
+  - 36:
+      label: 'User Defined Name'
+      transitions:
+        - [['e'],31]
+        - ['alpha_ex',42]
+  - 37:
+      label: 'User Defined Name'
+      transitions:
+        - [['t'],27]
+        - ['alpha_ex',42]
+  - 38:
+      label: 'User Defined Name'
+      transitions:
+        - [['h'],36]
+        - ['alpha_ex',42]
+  - 39:
+      label: 'User Defined Name'
+      transitions:
+        - [['l'],37]
+        - ['alpha_ex',42]
+  - 40:
+      label: 'User Defined Name'
+      transitions:
+        - [['o'],32]
+        - ['alpha_ex',42]
+  - 41:
+      label: 'User Defined Name'
+      transitions:
+        - [['a'],39]
+        - ['alpha_ex',42]
+  - 42:
+      label: 'User Defined Name'
+      transitions:
+        - ['alpha',42]
+        - ['dnull',42]
+  - 43:
+      label: 'Integer'
+      transitions:
+  - 44:
+      label: 'Integer'
+      transitions:
+        - ['dnull',44]
+  - 45:
+      label: ''
+      transitions:
+        - ['dpos',44]
+  - 46:
+      label: ''
+      transitions:
+        - [[' '],50]
+        - ['dnull',50]
+        - ['alpha',50]
+        - [['"'],49]
+  - 47:
+      label: 'Grouping Symbol'
+      transitions:
+  - 48:
+      label: 'Assignment Operator'
+      transitions:
+  - 49:
+      label: 'String'
+      transitions:
+  - 50:
+      label: ''
+      transitions:
+        - [[' '],51]
+        - ['dnull',51]
+        - ['alpha',51]
+        - [['"'],49]
+  - 51:
+      label: ''
+      transitions:
+        - [[' '],52]
+        - ['dnull',52]
+        - ['alpha',52]
+        - [['"'],49]
+  - 52:
+      label: ''
+      transitions:
+        - [[' '],53]
+        - ['dnull',53]
+        - ['alpha',53]
+        - [['"'],49]
+  - 53:
+      label: ''
+      transitions:
+        - [[' '],54]
+        - ['dnull',54]
+        - ['alpha',54]
+        - [['"'],49]
+  - 54:
+      label: ''
+      transitions:
+        - [[' '],55]
+        - ['dnull',55]
+        - ['alpha',55]
+        - [['"'],49]
+  - 55:
+      label: ''
+      transitions:
+        - [[' '],56]
+        - ['dnull',56]
+        - ['alpha',56]
+        - [['"'],49]
+  - 56:
+      label: ''
+      transitions:
+        - [[' '],57]
+        - ['dnull',57]
+        - ['alpha',57]
+        - [['"'],49]
+  - 57:
+      label: ''
+      transitions:
+        - [['"'],49]
+      error: 'String may not be more than 8 characters in length'
