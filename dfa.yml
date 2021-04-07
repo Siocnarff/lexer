@@ -24,7 +24,7 @@ states:
         - [['"'],46]
         - [['{','}','(',')',',',';'],47]
         - [['='],48]
-        - [['<','>'],49]
+        - [['<','>'],58]
   - 2:
       label: 'User Defined Name'
       transitions:
@@ -308,3 +308,6 @@ states:
       transitions:
         - [['"'],49]
       error: 'String may not be more than 8 characters in length'
+  - 58:
+      label: 'Comparison Symbol'
+      transitions:
