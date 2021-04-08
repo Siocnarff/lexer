@@ -94,12 +94,10 @@ class DFA
 	def eat(k)
 		@buffer = ''
 		current = @states[@current_state]
-		if k.ord == 10 or k.ord == 13
-			return false
-		elsif k.ord == 32 and current.is_accepting?
-			return [current.get_class_label, @token]
-		else
+		if k.ord != 10 and k.ord != 13 and k.ord != 32
 			@buffer = k
+		elsif @current_state == 1
+			return false
 		end
 		begin
 			@current_state = current.eat(k)
@@ -153,6 +151,3 @@ file_data.split('').push(' ').each do |k|
 		break
 	end
 end
-
-
-#todo: fix error where we lose valid input if no space is used : do real buffer
