@@ -1,3 +1,3 @@
-this add that while { 23 < 22 and 44 eq (12 add 32)}
-samwise = "samwise{} gamgee"
+this add that while { 23 < 22 and 44 eq (12 add 32)} 30add30
+samwise = "samwise "
 thenis = d233e
